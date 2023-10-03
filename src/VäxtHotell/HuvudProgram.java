@@ -7,6 +7,7 @@ import java.util.Arrays;
 public class HuvudProgram {
     public static void main(String[] args) {
 
+        //Polymorfism
         ArrayList<Växt> växterList = new ArrayList<>(Arrays.asList(
                 new Kaktus("Kaktusen Igge", 0.2),
                 new Palm("Palmen Laura", 5),
@@ -14,10 +15,11 @@ public class HuvudProgram {
                 new Palm("Palmen Olof", 1)
         ));
 
+        //Felsökning för input String
         while (true){
             boolean controller = true;
             String input = JOptionPane.showInputDialog("Vilken växt ska få mat?");
-            if (input.isEmpty()){
+            if (input==null || input.isEmpty()){
                 JOptionPane.showMessageDialog(null, "Input kan inte vara tom.");
                 continue;
             }

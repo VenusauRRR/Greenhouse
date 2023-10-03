@@ -1,6 +1,8 @@
 package VäxtHotell;
 
+//Arv och Interface
 public class Palm extends Växt implements Vätska{
+    //Inkapsulning och anrop Enum konstanter
     private final VätskaTyp vätskaTyp = VätskaTyp.KRANVATTEN;
 
     public Palm(String namn, double ländg){

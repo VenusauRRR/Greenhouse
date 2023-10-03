@@ -6,7 +6,7 @@ public enum VätskaTyp {
     MINERALVATTEN ("mineralvatten",0.02);
 
     final String vätskaNamn;
-    double volym;
+    final double volym;
 
     VätskaTyp(String vätskaNamn,double volym){
         this.vätskaNamn = vätskaNamn;
