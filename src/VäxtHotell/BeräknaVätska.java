@@ -1,6 +1,6 @@
 package VäxtHotell;
 
-public interface Vätska {
+public interface BeräknaVätska {
     abstract public double räknaVätska();
 
 }

@@ -4,10 +4,10 @@ import java.math.BigDecimal;
 import java.text.DecimalFormat;
 
 public class Köttätande extends Växt {
-    private final VätskaTyp vät_Typ = VätskaTyp.PROTEINDRYCK;
+    protected final VätskaTyp vät_Typ = VätskaTyp.PROTEINDRYCK;
 
-    public Köttätande(String namn, double ländg){
-        super(namn,ländg);
+    public Köttätande(String namn, double längd){
+        super(namn,längd);
         super.vätskaTyp = vät_Typ.vätskaNamn;
         super.vätskaVolym = räknaVätska();
     }
