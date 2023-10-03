@@ -1,7 +1,6 @@
 package VäxtHotell;
 
-public class Kaktus extends Växt implements Vätska {
-
+public class Kaktus extends Växt {
     private final VätskaTyp vätskaTyp = VätskaTyp.MINERALVATTEN;
 
     public Kaktus(String namn, double ländg){

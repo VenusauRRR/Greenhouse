@@ -1,6 +1,9 @@
 package VäxtHotell;
 
-public class Köttätande extends Växt implements Vätska{
+import java.math.BigDecimal;
+import java.text.DecimalFormat;
+
+public class Köttätande extends Växt {
     private final VätskaTyp vätskaTyp = VätskaTyp.PROTEINDRYCK;
 
     public Köttätande(String namn, double ländg){
@@ -11,6 +14,8 @@ public class Köttätande extends Växt implements Vätska{
 
     @Override
     public double räknaVätska() {
-        return 0.1+vätskaTyp.volym*this.längd;
+        DecimalFormat df = new DecimalFormat("#.##");
+        String st = df.format(0.1+vätskaTyp.volym*this.längd);
+        return Double.parseDouble(st.replace(",","."));
     }
 }

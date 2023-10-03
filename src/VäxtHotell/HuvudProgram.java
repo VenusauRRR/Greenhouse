@@ -32,7 +32,7 @@ public class HuvudProgram {
                 }
             }
             if (controller){
-            JOptionPane.showMessageDialog(null, "Fel input.");
+            JOptionPane.showMessageDialog(null, "Växter finns inte.");
             }
         }
     }

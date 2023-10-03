@@ -1,6 +1,6 @@
 package VäxtHotell;
 
-abstract class Växt {
+abstract class Växt implements Vätska {
     String namn;
     double längd;
 

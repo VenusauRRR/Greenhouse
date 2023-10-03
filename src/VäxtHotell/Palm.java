@@ -1,7 +1,7 @@
 package VäxtHotell;
 
 //Arv och Interface
-public class Palm extends Växt implements Vätska{
+public class Palm extends Växt {
     //Inkapsulning och anrop Enum konstanter
     private final VätskaTyp vätskaTyp = VätskaTyp.KRANVATTEN;
 
@@ -10,6 +10,7 @@ public class Palm extends Växt implements Vätska{
         super.vätska = vätskaTyp.vätskaNamn;
         super.vätskaVolym = räknaVätska();
     }
+
     @Override
     public double räknaVätska() {
         return vätskaTyp.volym*this.längd;
