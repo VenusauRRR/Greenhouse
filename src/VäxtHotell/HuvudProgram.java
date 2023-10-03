@@ -30,6 +30,7 @@ public class HuvudProgram {
             }
             JOptionPane.showMessageDialog(null, "Fel input.");
             //test 1
+            //test 2
         }
     }
 }
