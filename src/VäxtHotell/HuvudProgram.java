@@ -16,8 +16,8 @@ public class HuvudProgram {
 
         while (true){
             String input = JOptionPane.showInputDialog("Vilken växt ska få mat?");
-            if (input==null){
-                System.out.println("Input kan inte vara tom.");
+            if (input==null || input.isEmpty()){
+                JOptionPane.showMessageDialog(null, "Input kan inte vara tom.");
                 continue;
             }
 
@@ -25,8 +25,10 @@ public class HuvudProgram {
                 if (input.equals(växterList.get(i).getNamn())){
                     JOptionPane.showMessageDialog(null,
                             "Växten behöver " + växterList.get(i).getVätskaVolym() + " litre " + växterList.get(i).getVätska() + " per dag.");
+
+                }
             }
-        }
+            JOptionPane.showMessageDialog(null, "Fel input.");
         }
     }
 }
