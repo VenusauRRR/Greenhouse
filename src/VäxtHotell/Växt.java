@@ -4,7 +4,7 @@ abstract class Växt implements Vätska {
     String namn;
     double längd;
 
-    String vätska;
+    String vätskaTyp;
 
     double vätskaVolym;
 
@@ -17,7 +17,7 @@ abstract class Växt implements Vätska {
         return namn;
     }
 
-    public String getVätska() { return vätska; }
+    public String getVätska() { return vätskaTyp; }
 
     public double getVätskaVolym() {
         return vätskaVolym;

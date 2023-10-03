@@ -1,16 +1,16 @@
 package VäxtHotell;
 
 public class Kaktus extends Växt {
-    private final VätskaTyp vätskaTyp = VätskaTyp.MINERALVATTEN;
+    private final VätskaTyp vät_Typ = VätskaTyp.MINERALVATTEN;
 
     public Kaktus(String namn, double ländg){
         super(namn,ländg);
-        super.vätska = vätskaTyp.vätskaNamn;
+        super.vätskaTyp = vät_Typ.vätskaNamn;
         super.vätskaVolym = räknaVätska();
     }
 
     @Override
     public double räknaVätska() {
-        return vätskaTyp.volym;
+        return vät_Typ.volym;
     }
 }
