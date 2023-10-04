@@ -3,7 +3,7 @@ package VäxtHotell;
 //Arv och Interface
 public class Palm extends Växt {
     //Inkapsulning och anrop Enum konstanter
-    protected final VätskaTyp vät_typ = VätskaTyp.KRANVATTEN;
+    protected final Vätska vät_typ = Vätska.KRANVATTEN;
 
     public Palm(String namn, double längd){
         super(namn,längd);

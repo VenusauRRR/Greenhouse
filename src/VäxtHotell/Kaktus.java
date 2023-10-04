@@ -1,7 +1,7 @@
 package VäxtHotell;
 
 public class Kaktus extends Växt {
-    protected final VätskaTyp vät_Typ = VätskaTyp.MINERALVATTEN;
+    protected final Vätska vät_Typ = Vätska.MINERALVATTEN;
 
     public Kaktus(String namn, double längd){
         super(namn,längd);

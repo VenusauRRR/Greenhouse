@@ -1,6 +1,6 @@
 package VäxtHotell;
 
-public enum VätskaTyp {
+public enum Vätska {
     KRANVATTEN ("kranvatten",0.5),
     PROTEINDRYCK ("proteinDryck", 0.2),
     MINERALVATTEN ("mineralvatten",0.02);
@@ -8,7 +8,7 @@ public enum VätskaTyp {
     final String vätskaNamn;
     final double volym;
 
-    VätskaTyp(String vätskaNamn,double volym){
+    Vätska(String vätskaNamn,double volym){
         this.vätskaNamn = vätskaNamn;
         this.volym = volym;
     }

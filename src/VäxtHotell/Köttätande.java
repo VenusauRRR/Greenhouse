@@ -4,7 +4,7 @@ import java.math.BigDecimal;
 import java.text.DecimalFormat;
 
 public class Köttätande extends Växt {
-    protected final VätskaTyp vät_Typ = VätskaTyp.PROTEINDRYCK;
+    protected final Vätska vät_Typ = Vätska.PROTEINDRYCK;
 
     public Köttätande(String namn, double längd){
         super(namn,längd);
