@@ -9,7 +9,7 @@ public class Köttätande extends Växt {
     public Köttätande(String namn, double längd){
         super(namn,längd);
         super.vätskaTyp = vät_Typ.vätskaNamn;
-        super.vätskaVolym = räknaVätska();
+//        super.vätskaVolym = räknaVätska();
     }
 
     @Override

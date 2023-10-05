@@ -17,23 +17,20 @@ public class HuvudProgram {
 
         //Felsökning för input String
         while (true){
-            boolean controller = true;
             String input = JOptionPane.showInputDialog("Vilken växt ska få mat?");
-            if (input==null || input.isEmpty()){
+            if (input.isEmpty()){
                 JOptionPane.showMessageDialog(null, "Input kan inte vara tom.");
                 continue;
             }
 
-            for (int i = 0; i < växterList.size(); i++) {
-                if (input.equals(växterList.get(i).getNamn())){
+            for (Växt i : växterList){
+                if (input.toLowerCase().equals(i.getNamn().toLowerCase())){
                     JOptionPane.showMessageDialog(null,
-                            "Växten behöver " + växterList.get(i).getVätskaVolym() + " litre " + växterList.get(i).getVätska() + " per dag.");
-                controller = false;
+                            "Växten behöver " + i.räknaVätska() + " litre " + i.getVätska() + " per dag.");
+                    System.exit(1);
                 }
             }
-            if (controller){
             JOptionPane.showMessageDialog(null, "Växter finns inte.");
-            }
         }
     }
 }

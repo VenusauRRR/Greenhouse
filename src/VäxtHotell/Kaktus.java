@@ -6,7 +6,7 @@ public class Kaktus extends Växt {
     public Kaktus(String namn, double längd){
         super(namn,längd);
         super.vätskaTyp = vät_Typ.vätskaNamn;
-        super.vätskaVolym = räknaVätska();
+//        super.vätskaVolym = räknaVätska();
     }
 
     @Override

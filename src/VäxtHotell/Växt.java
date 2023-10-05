@@ -6,7 +6,7 @@ abstract class Växt implements BeräknaVätska {
 
     String vätskaTyp;
 
-    double vätskaVolym;
+    //double vätskaVolym;
 
     public Växt(String namn, double längd){
         this.namn = namn;
@@ -19,8 +19,9 @@ abstract class Växt implements BeräknaVätska {
 
     public String getVätska() { return vätskaTyp; }
 
+    /*
     public double getVätskaVolym() {
         return vätskaVolym;
     }
-
+*/
 }

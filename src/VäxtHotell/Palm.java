@@ -8,7 +8,7 @@ public class Palm extends Växt {
     public Palm(String namn, double längd){
         super(namn,längd);
         super.vätskaTyp = vät_typ.vätskaNamn;
-        super.vätskaVolym = räknaVätska();
+//        super.vätskaVolym = räknaVätska();
     }
 
     @Override
