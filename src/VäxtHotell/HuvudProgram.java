@@ -18,6 +18,9 @@ public class HuvudProgram {
         //Felsökning för input String
         while (true){
             String input = JOptionPane.showInputDialog("Vilken växt ska få mat?");
+            if (input == null){
+                System.exit(0);
+            }
             if (input.isEmpty()){
                 JOptionPane.showMessageDialog(null, "Input kan inte vara tom.");
                 continue;
@@ -31,6 +34,7 @@ public class HuvudProgram {
                 }
             }
             JOptionPane.showMessageDialog(null, "Växter finns inte.");
+
         }
     }
 }
